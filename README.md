@@ -1,0 +1,2 @@
+# LIRA
+Discovery plugin
