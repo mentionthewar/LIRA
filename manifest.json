@@ -1,0 +1,30 @@
+{
+
+	"manifest_version": 2,
+	"name": "NRA-Extension",
+	"version": "1.0",
+
+	"description": "augment NRA pages with Wikidata content",
+
+	"icons": {
+	"48": "icons/nra-48.png"
+	},
+	
+	"permissions": [
+	"*://query.wikidata.org/*",
+	"*://www.wikidata.org/*",
+	"*://commons.wikimedia.org/*",
+	"*://en.wikipedia.org/*",
+	"*://snaccooperative.org/*",
+	"*://api.snaccooperative.org/*"
+	],
+
+	"content_scripts":[
+	{
+		"matches": ["*://*.discovery.nationalarchives.gov.uk/details/c/*"],
+		"js": ["nra-wiki.js"]
+	}]
+	
+	
+
+}
